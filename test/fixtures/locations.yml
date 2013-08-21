@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place_name: MyString
+  street: MyString
+  suburb: MyString
+  date: 2013-08-21
+  start_time: 2013-08-21 23:04:02
+  finish_time: 2013-08-21 23:04:02
+
+two:
+  place_name: MyString
+  street: MyString
+  suburb: MyString
+  date: 2013-08-21
+  start_time: 2013-08-21 23:04:02
+  finish_time: 2013-08-21 23:04:02

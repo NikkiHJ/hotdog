@@ -1,4 +1,7 @@
 Hotdog::Application.routes.draw do
+  resources :locations
+
+
   authenticated :user do
     root :to => 'home#index'
   end

@@ -1,18 +1,33 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="box">
-				
 
-			</div>
-		</div>
-		<div class="col-md-3 col-md-offset-4">
-			<div class="logo-bg">
-				<center>
-					<%= image_tag 'hotdogs.png', :class => 'logo' %>
-				</center>
-			</div>
-		</div>
-	</div>
+<h1 style="margin-top:0;">Gourmet Hotdogs</h1>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h4><i class="icon-star icon-large"></i> Quality, fresh, locally made ingredients</h4>
+    <h4><i class="icon-heart icon-large"></i> Home made sauces</h4>
+    <h4><i class="icon-smile icon-large"></i> Friendliest service in town </h4>
+    <h4><i class="icon-thumbs-up icon-large"></i> A tasty, satisfying treat</h4>
+  </div>
 </div>
+
+
+
+
+<h1>Find us!</h1>
+
+<% if @locations.count > 0 %>
+  <% @locations.each do |location| %>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <%= location.place_name %>
+      </div>
+      <div class="panel-body">
+        <h4><i class="icon-calendar"></i> <%= location.date.strftime("%e %B %Y") %></h4>
+    <h4><i class="icon-time"></i> <%= location.start_time.strftime("%H:%M") %> - <%= location.finish_time.strftime("%H:%M") %></h4>
+    <h4><i class="icon-location-arrow"></i> <%= location.street %>, <%= location.suburb %></h4>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+
+
 

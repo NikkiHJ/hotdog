@@ -1,13 +1,8 @@
-html { 
-  background: url(1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 body { 
-	padding-top: 20px;
+	padding-top: 30px;
 	background-color: transparent;
+	font-size: 20px;
  }
 
 
@@ -17,7 +12,9 @@ body {
  	border-radius: 10px;
  	padding: 30px;
  }
-
+.info-box {
+	padding-left: 30px;
+}
 .logo-bg {
 	background-color: #f1c40f;
 	min-height: 200px;
@@ -28,4 +25,18 @@ body {
 
 	padding:35px;
  }
-@import "bootstrap-responsive";
+
+.info-box h1 {
+ 	color: #c0392b;
+ }
+ .table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-bottom: 1px solid #dddddd;
+}

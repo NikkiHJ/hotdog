@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+    @locations = Location.future_event(Date.today)
   end
 end
